@@ -50,7 +50,7 @@ const ListarTarefa = () => {
   const [idTarefaSelecionada, setIdTarefaSelecionada] = useState([]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const handleOpenEditar = () => setOpenEditar(true);
+  //const handleOpenEditar = () => setOpenEditar(true);
   const handleCloseEditar = () => setOpenEditar(false);
 
   //O array definido acima é setado como conteúdo do state Tarefas na renderização inicial do componente.
@@ -92,7 +92,7 @@ const ListarTarefa = () => {
             <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                 <TableHead>
-                <TableRow>
+                <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
                     <TableCell>#</TableCell>
                     <TableCell>Título</TableCell>
                     <TableCell align="right">Descrição</TableCell>
